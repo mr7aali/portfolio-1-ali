@@ -9,7 +9,7 @@ const Banner = () => {
 
 
 
-let code = '<code>'
+    let code = '<code>'
 
 
 
@@ -54,7 +54,7 @@ let code = '<code>'
                         </h1>
 
                         <p className='i-can-build-website'> I can build webside with {' '}
-                        <span style={{ color: 'red' }}>
+                            <span style={{ color: 'red' }}>
                                 {/* Style will be inherited from the parent element */}
                                 <Typewriter
                                     words={[`Html5, JavaScript, react.js, node.js, firebase`]}
@@ -68,14 +68,14 @@ let code = '<code>'
                                     onType={handleType}
                                 />
                             </span>
-                        
-                         </p>
+
+                        </p>
 
 
                         {/* <div className='banner-btn'>
                             <Link to='/course' className="btn btn-primary text-center mt-16 mx-auto ">Get Course</Link>
                         </div> */}
-
+                        <button className="btn btn-outline btn-error banner-btn">Download Resume</button>
                     </div>
 
                 </div>

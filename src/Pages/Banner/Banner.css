@@ -15,7 +15,7 @@
    
   }
   .img-gradient img{
-    height: 300px;
+    height: 350px;
   
   }
   .banner-Button a button{
@@ -36,5 +36,8 @@
   
   top: 150px;
 }
-
+.banner-btn{
+  position: absolute;
+  top: 200px;
+}
   
