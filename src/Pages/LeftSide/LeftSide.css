@@ -1,0 +1,79 @@
+.left-side-container{
+    
+    position: relative;
+    height: 100vh;
+    /* border: 1px solid red; */  
+  
+}
+.auth-details{
+
+    width: 100%;
+    background-color: white;
+    padding-top:20px ;
+    box-shadow: -3px -1px 18px 7px rgba(212,212,218,.1);
+  
+    top: 0;
+   
+}
+
+.auth-details .img-Container{
+    
+    height: 90px;
+    width: 90px;
+    margin: 0px auto;
+    border-radius: 50px;   
+    margin-bottom: 20px;
+}
+.auth-details .img-Container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+.name-container{
+    text-align: center;
+}
+.name-container p{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.skills-part{
+    padding: 25px;
+    background-color: #F4F4F6;
+   
+}
+.skills-part span{
+    margin-left: auto;
+}
+.p-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.language{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.language .single-language-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.auth-footer{
+    height: 40px;
+    width: 100%;
+    background-color: #FFFFFF;
+
+   position: absolute;
+   bottom: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+

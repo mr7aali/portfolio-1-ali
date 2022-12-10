@@ -1,0 +1,18 @@
+body{
+    background-color: #E0E0E6;
+}
+.full-home-container{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+   
+    height: 100vh;
+}
+.left-side-div{
+    background-color: #F4F4F6;
+    box-shadow: -3px -1px 18px 7px rgba(212,212,218,1);
+}
+.right-side-div{
+  
+    box-shadow: -3px -1px 18px 7px rgba(212,212,218,1);
+    margin-left: 15px;
+}
