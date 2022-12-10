@@ -2,22 +2,21 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Banner.css'
 import { Typewriter } from 'react-simple-typewriter'
-
+import Resume from '../../Assest/Sheikh Aali.pdf'
 
 const Banner = () => {
 
 
 
 
-    let code = '<code>'
-
+    
 
 
     const handleType = (count: number) => {
-        console.log(count)
+        // console.log(count)
     }
     const handleDone = () => {
-        console.log(`Done after 5 loops!`)
+        // console.log(`Done after 5 loops!`)
     }
 
 
@@ -75,7 +74,19 @@ const Banner = () => {
                         {/* <div className='banner-btn'>
                             <Link to='/course' className="btn btn-primary text-center mt-16 mx-auto ">Get Course</Link>
                         </div> */}
-                        <button className="btn btn-outline btn-error banner-btn">Download Resume</button>
+                        {/* <button className="btn btn-outline btn-error banner-btn">Download Resume</button> */}
+
+
+                        {/* <a href={Resume} tarGet="_blank" onPaste className='banner-btn'>See Resume</a> */}
+                        
+
+                        <div className='banner-btns'>
+                        <a href={Resume} tarGet="_blank" onPaste className='banner-btn'>See Resume</a>
+                        {/* <a href='#contract'  className='banner-btn'>Contact With me</a> */}
+
+                        <label htmlFor="my-modal-3" className='banner-btn'>Contact With me</label>
+
+                        </div>
                     </div>
 
                 </div>

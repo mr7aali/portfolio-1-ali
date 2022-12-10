@@ -36,8 +36,32 @@
   
   top: 150px;
 }
+.banner-btns{
+ position:absolute;
+ top: 200px;
+ display: flex;
+}
 .banner-btn{
-  position: absolute;
-  top: 200px;
+  /* position: absolute;
+  top: 200px; */
+  display: block;
+  height: 50px;
+  padding: 10px;
+
+  color: white;
+  font-weight: 600;
+  border: 1px solid #F46258;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+.banner-btn:hover{
+  border: 1px solid white;
+  background-color: #F46258;
+  color: black;
+  font-weight: 700;
 }
   

@@ -1,9 +1,12 @@
+.left-side-div-positon{
+   position: sticky;
+   top: 0;
+}
 .left-side-container{
     
     position: relative;
     height: 100vh;
-    /* border: 1px solid red; */  
-  
+    /* border: 1px solid red; */    
 }
 .auth-details{
 
@@ -11,7 +14,6 @@
     background-color: white;
     padding-top:20px ;
     box-shadow: -3px -1px 18px 7px rgba(212,212,218,.1);
-  
     top: 0;
    
 }
