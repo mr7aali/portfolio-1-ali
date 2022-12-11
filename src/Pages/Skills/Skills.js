@@ -20,7 +20,7 @@ setTimeout(()=>{
     setValue5(80);
     setValue6(100);
     setValue7(95);
-},1400)
+},1000)
 
     return (
        <div className='skills-part'>

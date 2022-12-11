@@ -1,24 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProjectCard = ({data}) => {
-
+const ProjectCard = ({ data }) => {
+console.log(data?.Links[0]?.liveWeb)
     return (
         <div className='project'>
-        <div className="img-container">
-            <img src={data.photo[0]} alt="" />
-        </div>
-        <div className="project-blg">
-            <h2>{data?.Name}</h2>
-            <p> {data.details[0]}...
-                <span className='text-red-600'> Read more</span></p>
+            <div className="img-container">
+                <img src={data.photo[0]} alt="" />
+            </div>
+            <div className="project-blg">
+                <h2>{data?.Name}</h2>
+                <p> {data.details[0]}...
+                   <Link to={`/details/${data?.id}`}> <span className='text-red-600'> Read more</span></Link>
 
-            <div className='project-btn-container'>
-                <a tarGet="_blank" href='https://mellifluous-crisp-9fb9ee.netlify.app/' className='Live-preview-btn'>Live view</a>
-                <Link to={`/details/${data?.id}`}  className='Live-preview-btn'>See Details</Link>
+                </p>
+
+                <div className='project-btn-container'>
+                    <a tarGet="_blank" href={data?.Links[0]?.liveWeb} className='Live-preview-btn'>Live view</a>
+                    <Link to={`/details/${data?.id}`} className='Live-preview-btn'>See Details</Link>
+                </div>
             </div>
         </div>
-    </div>
     );
 };
 
