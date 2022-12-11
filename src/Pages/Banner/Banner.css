@@ -35,7 +35,6 @@
   color: white;
   font-size: 20px;
   position: absolute;
-
   top: 150px;
 }
 
@@ -76,13 +75,32 @@
     left: 15px;
 
   }
-  .banner-h1 h1{
+
+  .banner-h1 h1 {
     font-size: 50px;
   }
 }
-@media only screen and (min-width:0px) and (max-width:940px){
-  .banner-btns{
 
-    top:250px ;
+@media only screen and (min-width:0px) and (max-width:940px) {
+  .banner-btns {
+
+    top: 250px;
+  }
+}
+
+@media only screen and (min-width:0px) and (max-width:820px) {
+  .banner-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 205px;
+    gap: 10px;
+    
+  }
+  .banner-btn{
+    margin-right: 0;
+  }
+  .i-can-build-website{
+    
+    top: 130px;
   }
 }

@@ -9,7 +9,7 @@ const Banner = () => {
 
 
 
-    
+
 
 
     const handleType = (count: number) => {
@@ -37,7 +37,7 @@ const Banner = () => {
                             {' '}
 
                             <span style={{ color: 'red', fontWeight: 'bold' }}>
-                          
+
                                 <Typewriter
                                     words={['Art Space!...',]}
                                     loop={100}
@@ -54,7 +54,7 @@ const Banner = () => {
 
                         <p className='i-can-build-website'> I can build webside with {' '}
                             <span style={{ color: 'red' }}>
-                               
+
                                 <Typewriter
                                     words={[`Html5, JavaScript, react.js, node.js, firebase`]}
                                     loop={100}
@@ -72,10 +72,10 @@ const Banner = () => {
 
 
                         <div className='banner-btns'>
-                        <a href={Resume} tarGet="_blank" onPaste className='banner-btn text-center'>See Resume</a>
-                     
-
-                        <label htmlFor="my-modal-3" className='banner-btn text-center'>Contact With me</label>
+                            <a href={Resume} target="_blank" onPaste className='banner-btn text-center'>See Resume</a>
+                            <label htmlFor="my-modal-3" className='banner-btn text-center '>Contact With me</label>
+                            <a href={"#about-me"} className='banner-btn text-center'>About Me</a>
+                            <Link to='/blog' className='banner-btn text-center'>Blogs</Link>
 
                         </div>
                     </div>
@@ -89,7 +89,7 @@ const Banner = () => {
 
             </div>
 
-         
+
 
 
         </div>

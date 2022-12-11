@@ -25,7 +25,7 @@ const Project = () => {
                             <span className='text-red-600'> Read more</span></p>
 
                         <div className='project-btn-container'>
-                            <a tarGet="_blank" href='https://mellifluous-crisp-9fb9ee.netlify.app/' className='Live-preview-btn'>Live view</a>
+                            <a target="_blank" href='https://mellifluous-crisp-9fb9ee.netlify.app/' className='Live-preview-btn'>Live view</a>
                             <Link to='/details'  className='Live-preview-btn'>See Details</Link>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ const Project = () => {
 
                         
                         <div className='project-btn-container'>
-                            <a tarGet="_blank" href='https://magical-treacle-3300e8.netlify.app/' className='Live-preview-btn'>Live view</a>
+                            <a target="_blank" href='https://magical-treacle-3300e8.netlify.app/' className='Live-preview-btn'>Live view</a>
                             <Link to='/details'  className='Live-preview-btn'>See Details</Link>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ const Project = () => {
 
                         
                         <div className='project-btn-container'>
-                            <a tarGet="_blank"href='https://flourishing-rolypoly-a9f61b.netlify.app/'className='Live-preview-btn'>Live view</a>
+                            <a target="_blank"href='https://flourishing-rolypoly-a9f61b.netlify.app/'className='Live-preview-btn'>Live view</a>
                             <Link to='/details'  className='Live-preview-btn'>See Details</Link>
                         </div>
                     </div>
@@ -75,6 +75,7 @@ const Project = () => {
                 {
                     projests?.map(p => <ProjectCard
                         data={p}
+                        key={p.id} 
                     ></ProjectCard>)
                 }
 

@@ -16,7 +16,7 @@ console.log(data?.Links[0]?.liveWeb)
                 </p>
 
                 <div className='project-btn-container'>
-                    <a tarGet="_blank" href={data?.Links[0]?.liveWeb} className='Live-preview-btn'>Live view</a>
+                    <a target="_blank" href={data?.Links[0]?.liveWeb} className='Live-preview-btn'>Live view</a>
                     <Link to={`/details/${data?.id}`} className='Live-preview-btn'>See Details</Link>
                 </div>
             </div>

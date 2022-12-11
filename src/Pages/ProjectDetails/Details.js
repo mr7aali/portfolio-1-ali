@@ -3,24 +3,30 @@ import { useLoaderData } from 'react-router-dom';
 import './Details.css'
 const Details = () => {
     const data = useLoaderData();
-    console.log(data.details);
+
+   
 
     return (
 
         <div className='full-details max-w-screen-xl'>
-            <h1 className='pt-20 text-center text-5xl font-bold text-primary pb-20'> Feature Of <span className='text-red-600'>{data.Name} </span></h1>
+            <h1 className='pt-20 h1-details text-center text-5xl font-bold text-primary pb-20'> Feature Of <span className='text-red-600'>{data.Name} </span></h1>
             {
                 data.details.map((p, i) =>
 
                     <div className='details-blg'>
-                        <p className='text-2xl'>{i + 1}. {" "} {p}</p>
+                        <p key={data.id}  className='text-2xl'>{i + 1}. {" "} {p}</p>
                     </div>
 
 
                 )
             }
+            <div className='link-div'>
+                <a target={'_blank'} href={data?.Links[0]?.gitClint}>GitHub Code Link</a>
+                <a target={'_blank'} href={data?.Links[0]?.liveWeb}>View live website</a>
+            </div>
+            
 
-            <h1 className='pt-10 text-center text-5xl font-bold text-primary pb-20'>Some Screenshots From<span className='text-red-600'> {data.Name}'s Page</span></h1>
+            <h1 className='pt-10 h1-details text-center text-5xl font-bold text-primary pb-20'>Some Screenshots From<span className='text-red-600'> {data.Name}'s Page</span></h1>
             {/* <div className='details-blg pt-20'>
 
                 <div className="card w-1/2 mx-auto glass">
@@ -41,7 +47,7 @@ const Details = () => {
                 {
                     data.photo.map(p =>
                         <div className='single-img'>
-                            <img src={p} alt="" />
+                            <img key={data.id} src={p} alt="" />
                         </div>
                     )
                 }

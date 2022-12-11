@@ -27,7 +27,9 @@ const Leftside = () => {
 
 
                 <div className='auth-footer'>
-                    <p>Footer</p>
+                    <a target={'_blank'} href="https://github.com/mr7aali">gitHub</a>
+                    <a target={'_blank'} href="https://www.linkedin.com/in/mr7aali/">LinkedIn</a>
+                    <a target={'_blank'} href="https://www.facebook.com/mr07aali">Facebook</a>
                 </div>
             </div>
         </div>

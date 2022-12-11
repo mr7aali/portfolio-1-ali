@@ -1,0 +1,41 @@
+.about-me{
+   
+    margin-top: 100px;
+}
+.about-blg{
+    background-color: white;
+    width: 70%;
+    margin: 50px auto;
+    /* height: 250px; */
+    position: relative;
+    box-shadow: -3px -1px 18px 7px rgba(212,212,218,1);
+    padding: 30px;
+    border-radius: 10px;
+
+}
+.about-blg .blg{
+    font-size: 20px;
+    margin: 30px 0;
+}
+.about-img{
+
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+.about-img img{
+    border-radius: 50%;
+}
+#about-me{
+    margin: 200px 0;
+ 
+}
+@media only screen and (min-width:0px) and (max-width:800px){
+.about-blg{
+    width: 95%;
+    text-align: justify;
+}
+}

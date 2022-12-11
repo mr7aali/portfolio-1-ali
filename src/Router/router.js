@@ -1,3 +1,5 @@
+import Blog from "../Blog/Blog";
+import AboutMe from "../Pages/AboutMe/AboutMe";
 import Details from "../Pages/ProjectDetails/Details";
 
 
@@ -19,6 +21,10 @@ const router = createBrowserRouter([
                 element:<Details></Details>,
                 loader:({params})=>fetch(`http://localhost:5000/project/${params._id}`)
             },
+            {
+                path:'/blog',
+                element:<Blog></Blog>
+            }
         ]
     }
 ])
