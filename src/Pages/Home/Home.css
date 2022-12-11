@@ -15,3 +15,10 @@ body{
     box-shadow: -3px -1px 18px 7px rgba(212,212,218,1);
     margin-left: 15px;
 }
+
+@media only screen and (min-width:0px) and (max-width:646px){
+.full-home-container{
+    display: flex;
+    flex-direction: column;
+}
+}

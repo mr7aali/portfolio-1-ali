@@ -1,3 +1,4 @@
+import Details from "../Pages/ProjectDetails/Details";
 
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -12,7 +13,12 @@ const router = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>
-            }
+            },
+            {
+                path:'/details/:_id',
+                element:<Details></Details>,
+                loader:({params})=>fetch(`http://localhost:5000/project/${params._id}`)
+            },
         ]
     }
 ])

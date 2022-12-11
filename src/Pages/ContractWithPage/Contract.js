@@ -14,12 +14,12 @@ const Contract = () => {
                         <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                         <h3 className="text-lg font-bold text-center m-5">Get in touch</h3>
 
-
-                        <form >
+                        {/* https://formsubmit.co/el/lecigo */}
+                        <form action="https://formsubmit.co/6a2d25528b9b977f755217b9cf4a32a0" method="POST">
 
                             <div className='nameFild'>
-                                <input type="text" placeholder='Type your name' className="input input-bordered w-5/12 font-bold " />
-                                <input type="text" placeholder='Type your email' className="input input-bordered w-1/2  font-bold " />
+                                <input type="text" name="name" required placeholder='Type your name' className="input input-bordered w-5/12 font-bold " />
+                                <input type="email" name="email" required placeholder='Type your email' className="input input-bordered w-1/2  font-bold " />
                             </div>
 
                             {/* <div className='nameFild mt-5'>
@@ -31,7 +31,7 @@ const Contract = () => {
 
 
                             <div className='mt-5 text-center w-full'>
-                                <button className="btn btn-outline w-1/2 ">Click For send</button>
+                                <button type="submit" className="btn btn-outline w-1/2 ">Click For send</button>
                             </div>
 
 

@@ -1,6 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Skills = () => {
+
+const [value,setValue]=useState(null);
+const [value2,setValue2]=useState(null);
+const [value3,setValue3]=useState(null);
+const [value4,setValue4]=useState(null);
+const [value5,setValue5]=useState(null);
+const [value6,setValue6]=useState(null);
+const [value7,setValue7]=useState(null);
+
+
+
+setTimeout(()=>{
+    setValue(100);
+    setValue2(98);
+    setValue3(95);
+    setValue4(85);
+    setValue5(80);
+    setValue6(100);
+    setValue7(95);
+},1400)
+
     return (
        <div className='skills-part'>
                 <div className='p-container'>
@@ -38,20 +59,20 @@ const Skills = () => {
 
                 <div className='development-skills'>
                     <p>Html</p>
-                    <progress className="progress w-56" value="95" max="100"></progress>
+                    <progress className="progress w-full" value={value} max="100"></progress>
                     <p>CSS</p>
-                    <progress className="progress w-56" value="90" max="100"></progress>
+                    <progress className="progress w-full" value={value2} max="100"></progress>
                     <p>JavaScript</p>
-                    <progress className="progress w-56" value="92" max="100"></progress>
+                    <progress className="progress w-full" value={value3} max="100"></progress>
                     <p>React.Js</p>
-                    <progress className="progress w-56" value="85" max="100"></progress>
+                    <progress className="progress w-full" value={value4} max="100"></progress>
                     <p>Node.Js</p>
-                    <progress className="progress w-56" value="80" max="100"></progress>
+                    <progress className="progress w-full" value={value5} max="100"></progress>
                     <p>Bootstrap,Tailwind,DaysiUi</p>
-                    <progress className="progress w-56" value="100" max="100"></progress>
+                    <progress className="progress w-full" value={value6} max="100"></progress>
                     
                     <p>Firebase</p>
-                    <progress className="progress w-56" value="90" max="100"></progress>
+                    <progress className="progress w-full" value={value7} max="100"></progress>
 
                 </div>
                 

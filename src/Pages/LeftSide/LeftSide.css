@@ -64,8 +64,6 @@
     align-items: center;
 }
 
-
-
 .auth-footer{
     height: 40px;
     width: 100%;
@@ -79,3 +77,13 @@
 }
 
 
+@media only screen and (min-width:0px) and (max-width:646px){
+    .left-side-container{
+       
+        height: auto;
+    }
+    .development-skills{
+        
+        margin: 0 auto;
+    }
+}
