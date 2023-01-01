@@ -23,7 +23,7 @@ setTimeout(()=>{
 },1000)
 
     return (
-       <div className='skills-part'>
+       <div className='skills-part text-[#000]'>
                 <div className='p-container'>
                     <p>Residence:</p>
                     <p>Bangladesh</p>

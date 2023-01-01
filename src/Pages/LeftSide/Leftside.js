@@ -13,8 +13,8 @@ const Leftside = () => {
                         <img src="https://i.ibb.co/4JBGr3z/img-For-LIke-ID.jpg" alt="" />
                     </div>
                     <div className='name-container'>
-                        <h1 className='text-lg font-bold '>Sheikh Aali</h1>
-                        <p>Front-end Deweloper <br />
+                        <h1 className='text-lg font-bold text-[#091728]'>Sheikh Aali</h1>
+                        <p className='text-[#1565C0]'>  Front-end Deweloper <br />
                             Ui/UX Designer</p>
                     </div>
 

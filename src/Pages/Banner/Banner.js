@@ -3,14 +3,9 @@ import './Banner.css'
 import { Typewriter } from 'react-simple-typewriter'
 import Resume from '../../Assest/Sheikh Aali.pdf'
 import { Box, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
-
-
-
-
-
-
 
     const handleType = (count) => {
         // console.log(count)
@@ -71,22 +66,11 @@ const Banner = () => {
                             </span>
 
                         </p>
-
-
-                        {/* <div className='banner-btns'>
-                            <a href={Resume} target="_blank" onPaste className='banner-btn text-center'>See Resume</a>
-                    
-                            <label htmlFor="my-modal-3" className='banner-btn text-center '>Contact With me</label>
-                            <a href={"#about-me"} className='banner-btn text-center'>About Me</a>
-                            <Link to='/blog' className='banner-btn text-center'>Blogs</Link>
-                        </div> */}
-
-
                         <Box className='banner-btns'>
                             <Button sx={{margin:'5px', cursor:'pointer' }} size="large" variant="contained" color="success" ><label style={{cursor:'pointer'}} variant="contained" htmlFor="my-modal-3" className='b anner-btn text-center '>Contact</label></Button>
                             <Button sx={{margin:'5px'}} size="large" variant="contained" color="error" href={Resume} target="_blank" onPaste className=' b anner-btn text-center'>Resume</Button>
                             <Button sx={{margin:'5px'}} size="large" variant="contained" href={"#about-me"} className='b anner-btn text-center'>About Me</Button>
-                            <Button sx={{margin:'5px'}} size="large" variant="contained" color="secondary" to='/blog' className='b anner-btn text-center'>Blogs</Button>
+                            <Link to='/blog'><Button sx={{margin:'5px'}} size="large" variant="contained" color="secondary" to='/blog' className='b anner-btn text-center'>Blogs</Button></Link>
                         </Box>
                     </div>
 

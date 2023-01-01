@@ -13,19 +13,21 @@ data[0].details.map(p=>console.log(p))
 
     return (
 
-        <div className='full-details max-w-screen-xl'>
+        <div className='full-details  max-w-screen-xl'>
             <h1 className='pt-20 h1-details text-center text-5xl font-bold text-primary pb-20'> Feature Of <span className='text-red-600'>{data.Name} </span></h1>
-            {
+           
+           {
                 data[0]?.details.map((p, i) =>
 
                     <div className='details-blg'>
-                        <p key={data._id}  className='text-2xl'>{i + 1}. {" "} {p}</p>
+                        <p key={data._id}  className='text-2xl text-[#081019]'>{i + 1}. {" "} {p}</p>
                     </div>
 
 
                 )
             }
-            <div className='link-div'>
+           
+            <div className='link-div '>
                 <Button variant="outlined"  color="success" endIcon={ <GitHubIcon/> } target={'_blank'} href={data[0]?.Links[0]?.gitClint}>GitHub Code Link</Button>
                 <Button variant="contained" color="success" endIcon={<LanguageIcon/>} target={'_blank'} href={data[0]?.Links[0]?.liveWeb}>View live website</Button>
             </div>
