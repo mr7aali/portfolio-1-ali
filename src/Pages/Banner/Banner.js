@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './Banner.css'
 import { Typewriter } from 'react-simple-typewriter'
 import Resume from '../../Assest/Sheikh Aali.pdf'
+import { Box, Button } from '@mui/material';
 
 const Banner = () => {
 
@@ -32,6 +32,8 @@ const Banner = () => {
                     <div className='w-full img-gradient '>
                         <img alt='https://i.ibb.co/ckPPwGw/pexels-kampus-production-7983617.jpg' src='https://i.ibb.co/sKwzzRZ/pexels-enzo-mu-oz-2663853.jpg' className="w-full" />
                     </div>
+
+
                     <div className='absolute top-1/4 left-24 banner-h1'>
                         <h1 className=' text-6xl  text-white font-bold '>Discover my Amazing
                             {' '}
@@ -71,13 +73,22 @@ const Banner = () => {
                         </p>
 
 
-                        <div className='banner-btns'>
+                        {/* <div className='banner-btns'>
                             <a href={Resume} target="_blank" onPaste className='banner-btn text-center'>See Resume</a>
+                    
                             <label htmlFor="my-modal-3" className='banner-btn text-center '>Contact With me</label>
                             <a href={"#about-me"} className='banner-btn text-center'>About Me</a>
                             <Link to='/blog' className='banner-btn text-center'>Blogs</Link>
+                        </div> */}
 
-                        </div>
+
+                        <Box className='banner-btns'>
+
+                            <Button sx={{margin:'5px'}} size="large" variant="contained" color="success" ><label variant="contained" htmlFor="my-modal-3" className='b anner-btn text-center '>Contact</label></Button>
+                            <Button sx={{margin:'5px'}} size="large" variant="contained" color="error" href={Resume} target="_blank" onPaste className=' b anner-btn text-center'>Resume</Button>
+                            <Button sx={{margin:'5px'}} size="large" variant="contained" href={"#about-me"} className='b anner-btn text-center'>About Me</Button>
+                            <Button sx={{margin:'5px'}} size="large" variant="contained" color="secondary" to='/blog' className='b anner-btn text-center'>Blogs</Button>
+                        </Box>
                     </div>
 
                 </div>

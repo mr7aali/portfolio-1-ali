@@ -5,7 +5,7 @@ import './Project.css'
 const Project = () => {
     const [projests, setProjects] = useState(null);
     useEffect(() => {
-        fetch('http://localhost:5000')
+        fetch('https://portfolio-1-server-mr7aali.vercel.app/')
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
@@ -75,7 +75,7 @@ const Project = () => {
                 {
                     projests?.map(p => <ProjectCard
                         data={p}
-                        key={p.id} 
+                        key={p._id} 
                     ></ProjectCard>)
                 }
 

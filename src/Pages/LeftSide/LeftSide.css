@@ -74,19 +74,23 @@
 }
 
 .auth-footer {
-    height: 40px;
+  
     width: 100%;
     background-color: #FFFFFF;
     position: absolute;
     bottom: 0;
-    display: flex;
+    
+    /* display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:0 50px;
+    padding:0 40px; */
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .auth-footer a{
- text-decoration: underline;
- color: red;
+
+ margin: 5px;
 }
 
 

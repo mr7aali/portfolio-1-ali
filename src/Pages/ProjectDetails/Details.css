@@ -54,21 +54,21 @@
 }
 
 .link-div a {
-    box-shadow: -3px -1px 18px 7px rgb(136, 136, 143);
-    border: 1px solid red;
-    background-color: #F46258;
+    /* box-shadow: -3px -1px 18px 7px rgb(136, 136, 143); */
+    /* border: 1px solid red; */
+    /* background-color: #F46258; */
     margin: 20px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
-    border-radius: 5px;
+    /* padding: 0 20px; */
+    /* border-radius: 5px; */
 }
-.link-div a:hover{
+/* .link-div a:hover{
     border: 1px solid #F46258;
     background-color: red;
-}
+} */
 @media only screen and (min-width:0px) and (max-width:960px){
     .link-div{
      

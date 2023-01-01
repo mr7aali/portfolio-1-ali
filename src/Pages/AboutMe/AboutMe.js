@@ -6,7 +6,7 @@ const AboutMe = () => {
             <h1 className='text-4xl text-center m-5 font-bold text-[#F46258]'>About me</h1>
             <div className='about-blg'>
                 <div className='about-img'>
-                    <img src="https://i.ibb.co/4JBGr3z/img-For-LIke-ID.jpg" alt="" srcset="" />
+                    <img src="https://i.ibb.co/4JBGr3z/img-For-LIke-ID.jpg" alt="" srcSet="" />
                 </div>
                 <h1 className='text-3xl font-bold'>Sheikh Aali</h1>
                 <p className='text-lg mt-1'>Web Developer & Student</p>

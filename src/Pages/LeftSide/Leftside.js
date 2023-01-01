@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react';
 import Skills from '../Skills/Skills';
 import './LeftSide.css'
@@ -27,9 +28,9 @@ const Leftside = () => {
 
 
                 <div className='auth-footer'>
-                    <a target={'_blank'} href="https://github.com/mr7aali">gitHub</a>
-                    <a target={'_blank'} href="https://www.linkedin.com/in/mr7aali/">LinkedIn</a>
-                    <a target={'_blank'} href="https://www.facebook.com/mr07aali">Facebook</a>
+                    <Button size="small"  color="error" variant="outlined" target={'_blank'} href="https://github.com/mr7aali">gitHub</Button>
+                    <Button size="small" color="info" sx={{}} variant="outlined" target={'_blank'} href="https://www.linkedin.com/in/mr7aali/">LinkedIn</Button>
+                    <Button size="small"  color="secondary"  variant="outlined" target={'_blank'} href="https://www.facebook.com/mr07aali">Facebook</Button>
                 </div>
             </div>
         </div>
