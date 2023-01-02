@@ -70,7 +70,7 @@ const Banner = () => {
                             <Button sx={{margin:'5px', cursor:'pointer' }} size="large" variant="contained" color="success" ><label style={{cursor:'pointer'}} variant="contained" htmlFor="my-modal-3" className='b anner-btn text-center '>Contact</label></Button>
                             <Button sx={{margin:'5px'}} size="large" variant="contained" color="error" href={Resume} target="_blank" onPaste className=' b anner-btn text-center'>Resume</Button>
                             <Button sx={{margin:'5px'}} size="large" variant="contained" href={"#about-me"} className='b anner-btn text-center'>About Me</Button>
-                            <Link to='/blog'><Button sx={{margin:'5px'}} size="large" variant="contained" color="secondary" to='/blog' className='b anner-btn text-center'>Blogs</Button></Link>
+                            <Button sx={{margin:'5px'}} size="large"  variant="contained" color="secondary" href='/blog' className='b anner-btn text-center'>Blogs</Button>
                         </Box>
                     </div>
 

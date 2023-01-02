@@ -70,7 +70,9 @@
   color: black;
   font-weight: 700;
 }
-
+.banner-btns a{
+  
+}
 
 @media only screen and (min-width:800px) and (max-width:1028px) {
   .banner-h1 {
@@ -95,18 +97,19 @@
   }
 }
 
+
 @media only screen and (min-width:0px) and (max-width:800px) {
   .banner-btns {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    
-    width: 100%;
-    margin: 0;
+    grid-template-columns: 1fr 1fr ; 
    
+    width: 100%;
+    margin: 0;  
     top: 215px;
     gap: 0px;
     
   }
+
   .banner-btn{
     margin-right: 0;
   }
