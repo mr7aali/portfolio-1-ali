@@ -6,7 +6,7 @@ const Contract = () => {
 
 
 
-            <div>
+            <div >
 
                 <input type="checkbox" id="my-modal-3" className="modal-toggle" />
                 <div className="modal">
