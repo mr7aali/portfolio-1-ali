@@ -13,7 +13,7 @@ const RightSide = () => {
            <Project></Project>
            <Contract></Contract>
            <AboutMe></AboutMe>
-           <ContractMe/>
+           {/* <ContractMe/> */}
            <Footer/>
         </div>
     );

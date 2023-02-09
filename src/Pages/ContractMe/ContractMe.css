@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 40px;
+
 }
 
 .contractMe-container .text-container {
@@ -21,7 +22,7 @@
     /* width: 530px;
     height: 515.05px; */
     width: 450px;
-    
+
 }
 
 .contractMe-container .form-container form {
@@ -31,12 +32,53 @@
 }
 
 .contractMe-container .form-container form input {
-   
+
+    /* margin: 18px 0; */
+    /* background-color: #F3F3F3; */
+    background-color: #ffff;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #006BBD;
+    padding: 0 15px;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+
+
+}
+
+.contractMe-container .form-container form span {
+    position: absolute;
+    left: 0;
+    padding: 5px 11px;
+    font-size: 15px;
+    transition: 0.1s;
+
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: #006BBD;
+    transform: translateX(10px);
+    font-size: 18px;
+    padding: 0 15px;
+    top: -15px;
+    background-color: #ffff;
+    border-left: 2px solid #006BBD;
+}
+
+.contractMe-container .form-container form textarea {
+
     margin: 18px 0;
     background-color: #F3F3F3;
     border-radius: 5px;
     outline: none;
+    border: 3px solid #006BBD;
+    padding: 10px 15px;
+    height: 225px;
+
 }
+
 input::placeholder {
     font-weight: bold;
     opacity: 0.5;
